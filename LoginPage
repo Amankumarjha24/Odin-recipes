@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            align-items: center;
+            
+            gap: 30px;
+            
+            
+        }
+       
+        .main .background{
+            width: 30%;
+            height: 100%;
+             background-color: black;
+            background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .main .form{
+            width: 70%;
+            background-color: white;
+            height: 100%;
+            position: relative;
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        } 
+        .form p{
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            text-justify: inter-word;
+            text-align: start;
+            color: black;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img{
+            width: 100%;
+            height: 100px;
+            top: 130px;
+            position: absolute;
+            background-color: rgba(3, 3, 3, 0.505);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgbox{
+            width: 100px;
+            height: 100%;
+
+        }
+        .imgbox img{
+            width: 100%;
+            height: 100%;
+        }
+        .formArea{
+            width: 100%;
+            height: 300px;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            display: flex;
+         flex-direction: column;
+         margin-top: 100px;
+            
+        }
+        form{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            height: 100%;
+            justify-content: center;
+            font-family: sans-serif;
+            padding: 20px;
+            
+        }
+        form input{
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 1px 2px 3px gray;
+            outline: none;
+
+        }
+        input:invalid{
+           box-shadow:  2px 3px red;
+        }
+        input:valid{
+            box-shadow:  2px 3px blue;
+        }
+        button{
+            width: 200px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: green;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 3px 3px 4px gray;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="background">
+            <div class="img">
+                <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas nulla ullam id earum laborum tempora sit, ut laudantium, impedit quo molestias praesentium nihil. Ratione, quos incidunt est corrupti quasi neque. Facilis labore sint vitae rerum incidunt corporis error id?</p>
+            <div class="formArea">
+                <form action="">
+                   <div class="right">
+                    <label for="">FIRST NAME</label><br><br>
+                    <input type="text" name="USERNAME" id="USER" required="true" placeholder="Enter your First Name"><br>
+                   <br> <label for="">EMAIL</label><br><br>
+                    <input type="email" name="email" id="USER" required="true" placeholder="Enter your email id"><br>
+                   <br> <label for="">PASSWORD</label><br><br>
+                    <input type="password" name="pass" id="USER" required="true" placeholder="Enter your password"><br>
+                    
+                   </div>
+                    <div class="left">
+                         <label for="">LAST NAME</label><br><br>
+                    <input type="text" name="USERNAME" id="USER" required="true" placeholder="Enter your last name"><br>
+                   <br> <label for="">CONFORM EMAIL</label><br><br>
+                    <input type="email" name="email" id="USER" required="true" placeholder="Conform your email id"><br>
+                   <br> <label for="">CONFORM PASSWORD</label><br><br>
+                    <input type="password" name="pass" id="USER" required="true" placeholder="Conform your password"><br>
+                    
+                    </div>
+                </form>
+                
+            </div>
+           <button type="submit">Create Account</button>
+            <h4 style="margin-top: 10px;">Already have an account?<a href="#" style="color: green;">Log in</a></h4>
+        </div>
+        
+    </div>
+     
+</body>
+</html>
